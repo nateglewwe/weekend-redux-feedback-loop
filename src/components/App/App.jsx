@@ -6,7 +6,7 @@ import './App.css';
 import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx';
 import Support from '../Support/Support.jsx';
-// import Comments from '../Comments/Comments.jsx';
+import Comments from '../Comments/Comments.jsx';
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
         <Support />
       </Route>
       <Route path="/comments" >
-        {/* <Comments /> */}
+        <Comments />
       </Route>
 
 
