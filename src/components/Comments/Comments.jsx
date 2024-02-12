@@ -9,7 +9,7 @@ function Comments () {
 
     const handleButtonClick = () => {
         dispatch({ type: 'ADD_TO_COMMENTS', payload: comments });
-        // history.push("/comments"); !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        history.push("/review");
     };
 
     return (

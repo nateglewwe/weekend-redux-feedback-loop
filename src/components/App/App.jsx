@@ -7,6 +7,7 @@ import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx';
 import Support from '../Support/Support.jsx';
 import Comments from '../Comments/Comments.jsx';
+import Review from '../Review/Review.jsx';
 
 function App() {
 
@@ -28,6 +29,9 @@ function App() {
       </Route>
       <Route path="/comments" >
         <Comments />
+      </Route>
+      <Route path="/review" >
+        <Review />
       </Route>
 
 
