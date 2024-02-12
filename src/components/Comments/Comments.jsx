@@ -16,10 +16,11 @@ function Comments () {
         <div>
             <h1>Any comments you want to leave?</h1><br />
             <p>Comments</p>
-            <input  placeholder='Enter comments here' 
+            <input  data-testid="input"
+                    placeholder='Enter comments here' 
                     value={comments}
                     onChange={(event) => setComments(event.target.value)}/>
-            <button onClick={handleButtonClick}>Next</button>
+            <button data-testid="next" onClick={handleButtonClick}>Next</button>
         </div>
     )
 }

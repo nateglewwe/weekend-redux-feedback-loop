@@ -8,7 +8,7 @@ function Review () {
     const support = useSelector((store) => store.support);
     const comments = useSelector((store) => store.comments);
     const allData = useSelector((store) => store);
-    
+
     const history = useHistory();
 
 
@@ -33,7 +33,7 @@ function Review () {
             <p>Understanding: {understanding}</p>
             <p>Support: {support}</p>
             <p>Comments: {comments}</p>
-            <button type='submit' >SUBMIT</button>
+            <button data-testid="next" type='submit' >SUBMIT</button>
         </form>
     )
 }

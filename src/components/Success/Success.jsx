@@ -10,7 +10,7 @@ function Success () {
     return (
         <div>
             <h1>Success! Thank you!</h1>
-            <button onClick={resetForm}>Leave New Feedback</button>
+            <button data-testid="next" onClick={resetForm}>Leave New Feedback</button>
         </div>
     )
 }

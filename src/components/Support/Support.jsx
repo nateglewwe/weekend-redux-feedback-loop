@@ -16,7 +16,8 @@ function Support () {
         <div>
             <h1>How well are you being supported?</h1><br />
             <p>Support?</p>
-            <input  type='number'
+            <input  data-testid="input"
+                    type='number'
                     min='1'
                     max='5'
                     step='1'
@@ -24,7 +25,7 @@ function Support () {
                     value={supportLvl}
                     onChange={(event) => setSupportLvl(event.target.value)}
                     required/>
-            <button onClick={handleButtonClick}>Next</button>
+            <button data-testid="next" onClick={handleButtonClick}>Next</button>
         </div>
     )
 }

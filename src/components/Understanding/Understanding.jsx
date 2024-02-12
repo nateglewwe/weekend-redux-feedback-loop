@@ -16,7 +16,8 @@ function Understanding () {
         <div>
             <h1>How well are you understanding the content?</h1><br />
             <p>Understanding?</p>
-            <input  type='number'
+            <input  data-testid="input"
+                    type='number'
                     min='1'
                     max='5'
                     step='1'
@@ -24,7 +25,7 @@ function Understanding () {
                     value={understandingLvl}
                     onChange={(event) => setUnderstandingLvl(event.target.value)}
                     required/>
-            <button onClick={handleButtonClick}>Next</button>
+            <button data-testid="next" onClick={handleButtonClick}>Next</button>
         </div>
     )
 }
