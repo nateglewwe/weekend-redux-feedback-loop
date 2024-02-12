@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 function Review () {
     const feeling = useSelector((store) => store.feeling);
@@ -7,6 +8,9 @@ function Review () {
     const support = useSelector((store) => store.support);
     const comments = useSelector((store) => store.comments);
     const allData = useSelector((store) => store);
+    
+    const history = useHistory();
+
 
     const submitForm = (event) => {
         event.preventDefault();
@@ -15,6 +19,7 @@ function Review () {
         .post('/api/feedback', allData)
         .then((response) => {
           console.log('Success I think?');
+          history.push("/success");
         })
         .catch((error) => {
           console.log('ERROR:', error);

@@ -8,6 +8,7 @@ import Understanding from '../Understanding/Understanding.jsx';
 import Support from '../Support/Support.jsx';
 import Comments from '../Comments/Comments.jsx';
 import Review from '../Review/Review.jsx';
+import Success from '../Success/Success.jsx';
 
 function App() {
 
@@ -33,8 +34,9 @@ function App() {
       <Route path="/review" >
         <Review />
       </Route>
-
-
+      <Route path="/success" >
+        <Success />
+      </Route>
 
     </Router>
     </div>
